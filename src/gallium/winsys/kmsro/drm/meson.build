@@ -34,9 +34,6 @@ endif
 if with_gallium_freedreno
   kmsro_c_args += '-DGALLIUM_FREEDRENO'
 endif
-if with_gallium_panfrost
-  kmsro_c_args += '-DGALLIUM_PANFROST'
-endif
 if with_gallium_asahi
   kmsro_c_args += '-DGALLIUM_ASAHI'
 endif
