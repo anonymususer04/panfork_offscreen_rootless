@@ -626,10 +626,6 @@ if with_dri
   endif
 endif
 
-if with_gallium_kmsro and (with_platform_x11 and not with_dri3)
-  error('kmsro requires dri3 for X11 support')
-endif
-
 dep_dxheaders = null_dep
 if with_gallium_d3d12 or with_microsoft_clc or with_microsoft_vk
   dep_dxheaders = dependency('directx-headers', required : false)
